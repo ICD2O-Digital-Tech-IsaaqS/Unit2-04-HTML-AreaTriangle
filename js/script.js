@@ -10,14 +10,12 @@
  */
 function calculate () {
   // input
-  let length = parseInt(document.getElementById('length-of-rectangle').value);
-  let width = parseInt(document.getElementById('width-of-rectangle').value);
+  let base = parseInt(document.getElementById('base-of-triangle').value);
+  let height = parseInt(document.getElementById('height-of-triangle').value);
 
   // process
-  let area = length * width;
-  let perimeter = 2 * (length + width);
+  let area = base * height / 2;
 
   // output
   document.getElementById('area').innerHTML = 'Area is: ' + area + ' cm²'
-  document.getElementById('perimeter').innerHTML = 'Perimeter is: ' + perimeter + ' cm'
 }
